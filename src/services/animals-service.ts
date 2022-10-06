@@ -14,15 +14,15 @@ export default class AnimalsService extends BaseService {
 	}
 
 	getAnimal(id: string): Promise<Animal> {
-		return this.httpClient.$get(`/animals${id}`)
+		return this.httpClient.$get(`/animals/${id}`)
 	}
 
 	deleteAnimal(id: string): Promise<Animal> {
-		return this.httpClient.$delete(`/animals${id}`)
+		return this.httpClient.$delete(`/animals/${id}`)
 	}
 
 	deleteUpdate(id: string, animal: AnimalDTO): Promise<Animal> {
-		return this.httpClient.$delete(`/animals${id}`, animal)
+		return this.httpClient.$delete(`/animals/${id}`, animal)
 	}
 
 }
