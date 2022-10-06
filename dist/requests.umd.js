@@ -40,13 +40,13 @@
 			return this.httpClient.$get("/animals")
 		}
 		getAnimal(e) {
-			return this.httpClient.$get(`/animals${e}`)
+			return this.httpClient.$get(`/animals/${e}`)
 		}
 		deleteAnimal(e) {
-			return this.httpClient.$delete(`/animals${e}`)
+			return this.httpClient.$delete(`/animals/${e}`)
 		}
 		deleteUpdate(e, d) {
-			return this.httpClient.$delete(`/animals${e}`, d)
+			return this.httpClient.$delete(`/animals/${e}`, d)
 		}
 	}
 	;(t.AnimalsService = l),

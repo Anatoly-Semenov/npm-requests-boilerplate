@@ -30,13 +30,13 @@ class g extends m {
 		return this.httpClient.$get("/animals")
 	}
 	getAnimal(e) {
-		return this.httpClient.$get(`/animals${e}`)
+		return this.httpClient.$get(`/animals/${e}`)
 	}
 	deleteAnimal(e) {
-		return this.httpClient.$delete(`/animals${e}`)
+		return this.httpClient.$delete(`/animals/${e}`)
 	}
 	deleteUpdate(e, i) {
-		return this.httpClient.$delete(`/animals${e}`, i)
+		return this.httpClient.$delete(`/animals/${e}`, i)
 	}
 }
 export { g as AnimalsService }
