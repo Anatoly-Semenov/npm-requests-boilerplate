@@ -11,7 +11,7 @@ To install a package in your project, you need to add an entry to the `dependenc
 All file types in the root package
 
  ```
- import { ProfileService } from "@sk-requests"
+ import { AnyService } from "npm-requests"
  
  const anyService = new AnyService(ctx)
 ```
